@@ -2,15 +2,15 @@ let pos = [];
 let size = 2;
 
 function setup() {
-  if (frameCount%50==0){
+  if (frameCount%100==0){
   canvas = createCanvas(600, 400);
   background(240);
     for (var i=10 ; i<canvas.width ; i=i+10){
-    for (var j=10; j<canvas.height ; j=j+10){
-      ellipse(i,j,2,2);
-      pos.push({x:i,y:j});
-    }
-  }
+    	for (var j=10; j<canvas.height ; j=j+10){
+      	ellipse(i,j,2,2);
+      	pos.push({x:i,y:j});
+    	}
+   }
   }
 }
 
