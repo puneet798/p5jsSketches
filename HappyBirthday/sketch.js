@@ -4,7 +4,7 @@ let pose;
 let d = 30;
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(600, 450);
   background(220);
   frameRate(30);
   video = createCapture(VIDEO);
@@ -27,7 +27,7 @@ function gotPoses(poses){
 function draw() {
   image(video,0,0);
   textSize(30);
-  text('Happy Birthday Vaishali',150,30)
+  text('Happy Birthday Kritika',150,30)
   fill(random(255),23,189);
   //text('6 days to go! Yay!!',200,50)
   if (pose){
