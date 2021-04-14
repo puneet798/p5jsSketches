@@ -60,6 +60,7 @@ function setup() {
   slider.style('width', '80px');
   capture1 = createCapture(device1);
   capture1.size(840,600);
+  capture1.position(840,0 , 'fixed');
   serial = new p5.SerialPort(); // make a new instance of the serialport library
   serial.on('data', serialEvent); // callback for when new data arrives
   serial.open(portName, options); // open a serial port @ 9600 
