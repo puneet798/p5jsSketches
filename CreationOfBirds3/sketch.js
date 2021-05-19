@@ -16,9 +16,9 @@ function preload(){
 }
 
 function setup() {
-  canvas = createCanvas(640,800);
-  leftBuffer = createGraphics(640, 400);
-  rightBuffer = createGraphics(640, 400);
+  canvas = createCanvas(800,800);
+  leftBuffer = createGraphics(800, 400);
+  rightBuffer = createGraphics(800, 400);
   textFont('helvetica', 14);
   //textFont(myFont);
   textLeading(21);
