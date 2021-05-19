@@ -11,7 +11,7 @@ function preload(){
   data1 = loadStrings('check.txt');
   data2 = loadStrings('check2.txt');
   data3 = loadStrings('check3.txt');
-  data4 = loadStrings('check4.txt');
+  //data4 = loadStrings('check4.txt');
   detector = ml5.objectDetector('cocossd',modelLoaded);
 }
 
