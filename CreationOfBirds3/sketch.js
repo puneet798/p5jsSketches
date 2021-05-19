@@ -86,7 +86,7 @@ function gotDetections(error,results){
   //console.log(results); 
   detections = results;
   detector.detect(video, gotDetections);
-  if(detections){
+  //if(detections){
     for (let i = 0; i < detections.length; i++) {
     let object = detections[i];
       //stroke(0, 255, 0);
@@ -108,7 +108,7 @@ function gotDetections(error,results){
       else
         status=false;
   }
-  }
+  //}
 }
 
 function drawText(status){
