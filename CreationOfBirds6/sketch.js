@@ -68,7 +68,7 @@ function draw(){
 }
 
 function drawLeftBuffer(){
-  image(video,0,height/2, width, height/2);
+  image(video,0,height/2);
 }
 
 function drawRightBuffer(){
