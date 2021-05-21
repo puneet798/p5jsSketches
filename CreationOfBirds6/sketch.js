@@ -72,7 +72,7 @@ function drawLeftBuffer(){
 
 function drawRightBuffer(){
   textFont(myFont);
-  if (status==true&&frameCount%60==0){
+  if (status==true){    //&&frameCount%60==0){
   lines = markov.generate(2);
   drawText(status);
 }
