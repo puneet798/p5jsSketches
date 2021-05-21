@@ -3,8 +3,7 @@ let detections = [];
 var myFont;
 
 var options = {
-     video: {
-        
+     video: {    
          facingMode: {
           exact: "environment"
         }
@@ -77,7 +76,7 @@ function drawRightBuffer(){
   lines = markov.generate(2);
   drawText(status);
 }
-  else if(status==false&&frameCount%40==0)
+  else if(status==false&&frameCount%60==0)
     {
        lines = markov.generate(2);
        drawText(status);
@@ -107,8 +106,9 @@ function gotDetections(error,results){
       //rect(object.x, object.y, object.width-100, object.height);
       //ellipse(object.x, object.y,object.width + object.height-100);
       noStroke();
-      fill(0);
-      textSize(45);
+      strokeWeight(2)
+      fill(255);
+      textSize(50);
       if (object.label=='bird')
       text("Bird Detected!", object.x + 20, object.y + 30 + height/2); 
       else if (object.label=='person')
